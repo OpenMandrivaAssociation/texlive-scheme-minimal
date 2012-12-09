@@ -33,3 +33,11 @@ corresponds exactly to collection-basic.
 %build
 
 %install
+
+
+%changelog
+* Wed Mar 07 2012 Paulo Andrade <pcpa@mandriva.com.br> 20120307-1
++ Revision: 783154
+- Import texlive-scheme-minimal
+- Import texlive-scheme-minimal
+
