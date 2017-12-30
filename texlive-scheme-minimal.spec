@@ -5,8 +5,8 @@
 # catalog-license undef
 # catalog-version undef
 Name:		texlive-scheme-minimal
-Version:	20120307
-Release:	9
+Version:	20170414
+Release:	1
 Summary:	minimal scheme (plain only)
 Group:		Publishing
 URL:		http://tug.org/texlive
