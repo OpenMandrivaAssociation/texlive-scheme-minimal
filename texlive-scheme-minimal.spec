@@ -1,17 +1,11 @@
-# revision 13822
-# category Scheme
-# catalog-ctan undef
-# catalog-date undef
-# catalog-license undef
-# catalog-version undef
 Name:		texlive-scheme-minimal
-Version:	20190228
+Version:	54191
 Release:	1
 Summary:	minimal scheme (plain only)
 Group:		Publishing
 URL:		http://tug.org/texlive
 License:	http://www.tug.org/texlive/LICENSE.TL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/scheme-minimal.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/scheme-minimal.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -28,16 +22,8 @@ corresponds exactly to collection-basic.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0
+%autosetup -p1 -c
 
 %build
 
 %install
-
-
-%changelog
-* Wed Mar 07 2012 Paulo Andrade <pcpa@mandriva.com.br> 20120307-1
-+ Revision: 783154
-- Import texlive-scheme-minimal
-- Import texlive-scheme-minimal
-
