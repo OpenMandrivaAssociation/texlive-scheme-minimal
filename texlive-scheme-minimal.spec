@@ -1,6 +1,6 @@
 Name:		texlive-scheme-minimal
 Version:	54191
-Release:	1
+Release:	2
 Summary:	minimal scheme (plain only)
 Group:		Publishing
 URL:		http://tug.org/texlive
