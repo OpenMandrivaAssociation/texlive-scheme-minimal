@@ -1,29 +1,22 @@
-Name:		texlive-scheme-minimal
-Version:	54191
-Release:	2
+%global tl_name scheme-minimal
+%global tl_revision 54191
+
+Name:		texlive-%{tl_name}
+Version:	%{tl_revision}
+Release:	1
 Summary:	minimal scheme (plain only)
 Group:		Publishing
-URL:		https://tug.org/texlive
-License:	http://www.tug.org/texlive/LICENSE.TL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/scheme-minimal.r%{version}.tar.xz
+URL:		https://www.ctan.org/pkg/scheme-minimal
+License:	LPPL
+Source0:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/scheme-minimal.r%{tl_revision}.tar.xz
 BuildArch:	noarch
-BuildRequires:	texlive-tlpkg
-Requires(pre):	texlive-tlpkg
-Requires:	texlive-collection-basic
+BuildSystem:	texlive
+Requires:	texlive(collection-basic)
+Provides:	texlive(%{tl_name}) = %{tl_revision}
 
 %description
-This is the minimal TeX Live scheme, with support for only
-plain TeX. (No LaTeX macros.)  LuaTeX is included because Lua
-scripts are used in TeX Live infrastructure.  This scheme
-corresponds exactly to collection-basic.
+This is the minimal TeX Live scheme, with support for only plain TeX.
+(No LaTeX macros.) LuaTeX is included because Lua scripts are used in
+TeX Live infrastructure. This scheme corresponds exactly to collection-
+basic.
 
-#-----------------------------------------------------------------------
-%files
-
-#-----------------------------------------------------------------------
-%prep
-%autosetup -p1 -c
-
-%build
-
-%install
